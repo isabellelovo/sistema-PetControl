@@ -3,3 +3,22 @@
 1754345481729	Delete element
 1754345485257	Delete element
 1754345489803	Delete element
+1754421614962	Encapsulate field 'especie, ...'
+1754421648559	Encapsulate field 'raca, ...'
+1754421805870	Encapsulate field 'peso, ...'
+1754421839971	Encapsulate field 'tutor, ...'
+1754422390866	Rename field 'codigo'
+1754422405802	Rename local variable 'codigo'
+1754422422839	Rename method 'setCodigo'
+1754422433368	Rename method 'getCodigo'
+1754422440726	Rename local variable 'codigo'
+1754422449664	Rename method 'validarCodigo'
+1754430289498	Encapsulate field 'id, ...'
+1754430743462	Encapsulate field 'tipo, ...'
+1754430766974	Encapsulate field 'pet, ...'
+1754430818740	Encapsulate field 'dia, ...'
+1754430848710	Encapsulate field 'mes, ...'
+1754430921380	Encapsulate field 'ano, ...'
+1754431019704	Encapsulate field 'status, ...'
+1754431037504	Encapsulate field 'observacao, ...'
+1754431165833	Encapsulate field 'valor, ...'

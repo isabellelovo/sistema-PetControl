@@ -1,0 +1,35 @@
+package model;
+
+public class Servico {
+	//
+	// CONSTANTES
+	//
+	
+	//
+	// ATRIBUTOS
+	//
+	private String id;
+	private String tipo;
+	private Pet pet;
+	private int dia;
+	private String mes;
+	private int ano;
+	private String status;
+	private String observacao;
+	private float valor;
+	
+	public Servico(String id, String tipo, Pet pet, int dia, String mes, int ano, String status, 
+			String observacao, float valor) {
+
+		super();
+		this.setId(id);
+		this.setTipo(tipo);
+		this.setPet(pet);
+		this.setDia(dia);
+		this.setMes(mes);
+		this.setAno(ano);
+		this.setStatus(status);
+		this.setObservacao(observacao);
+		this.setValor(valor);
+	}
+}

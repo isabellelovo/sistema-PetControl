@@ -7,7 +7,7 @@ public class Tutor implements Serializable {
 	final public static int VALOR_MIN_DIA = 1;
 	final public static int VALOR_MAX_DIA = 31;
 	final public static int VALOR_MIN_ANO = 1900;
-	public static final int VALOR_ANO_ATUAL = java.time.Year.now().getValue();
+	final public static int VALOR_ANO_ATUAL = java.time.Year.now().getValue();
 	
 	private String cpf;
 	private String nome;
@@ -144,10 +144,10 @@ public class Tutor implements Serializable {
 	
 	public static void validarMesNasc(String mesNasc) throws ModelException{
 		
-		if (mesNasc == null || mesNasc.length() == 0)
+		if (mesNasc == null)
 			throw new ModelException("O Mês do Nascimento não pode ser nulo.");
 		
-		//TODO Se as opções de "mês" não derem certo, fazer verificação
+		//TODO Se as opções não derem certo, fazer verificação
 	}
 	
 	public static void validarAnoNasc(int anoNasc) throws ModelException{

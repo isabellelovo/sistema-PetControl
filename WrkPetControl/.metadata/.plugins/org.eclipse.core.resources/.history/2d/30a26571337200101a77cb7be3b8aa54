@@ -1,0 +1,126 @@
+package model;
+
+import java.io.Serializable;
+import java.util.Set;
+
+public class Pet implements Serializable {
+	//
+	// CONSTANTES
+	//
+	
+	
+	private String id;
+	private String nome;
+	private String especie;
+	private String raca;
+	private int diaNasc;
+	private String mesNasc;
+	private int anoNasc;
+	private float peso;
+
+	private Tutor tutor;
+
+	public Pet(String id, String nome, String especie,
+			String raca, int diaNasc, String mesNasc, int anoNasc, float peso, Tutor tutor) throws ModelException {
+		super();
+		this.setId(id);
+		this.setNome(nome);
+		this.setEspecie(especie);
+		this.setRaca(raca);
+		this.setDiaNasc(diaNasc);
+		this.setMesNasc(mesNasc);
+		this.setAnoNasc(anoNasc);
+		this.setPeso(peso);
+		this.setTutor(tutor);
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) throws ModelException{
+		Pet.validarId(id);
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) throws ModelException{
+		Pet.validarNome(nome);
+		this.nome = nome;
+	}
+
+	public String getEspecie() {
+		return especie;
+	}
+
+	public void setEspecie(String especie) throws ModelException{
+		Pet.validarEspecie(especie);
+		this.especie = especie;
+	}
+
+	public String getRaca() {
+		return raca;
+	}
+
+	public void setRaca(String raca) throws ModelException{
+		Pet.validarRaca(raca);
+		this.raca = raca;
+	}
+	
+	public int getDiaNasc() {
+		return diaNasc;
+	}
+
+	public void setDiaNasc(int diaNasc) throws ModelException{
+		Pet.validarDiaNasc(diaNasc);
+		this.diaNasc = diaNasc;
+	}
+
+	public String getMesNasc() {
+		return mesNasc;
+	}
+
+	public void setMesNasc(String mesNasc) throws ModelException{
+		Pet.validarMesNasc(mesNasc);
+		this.mesNasc = mesNasc;
+	}
+
+	public int getAnoNasc() {
+		return anoNasc;
+	}
+
+	public void setAnoNasc(int anoNasc) throws ModelException{
+		Pet.validarAnoNasc(anoNasc);
+		this.anoNasc = anoNasc;
+	}
+
+	public float getPeso() {
+		return peso;
+	}
+
+	public void setPeso(float peso) throws ModelException {
+		Pet.validarPeso(peso);
+		this.peso = peso;
+	}
+
+	public Tutor getTutor() {
+		return tutor;
+	}
+
+	public void setTutor(Tutor tutor) throws ModelException{
+		Pet.validarTutor(tutor);
+		this.tutor = tutor;
+	}
+
+	public static void validarId(String id) throws ModelException{
+		
+	}
+	
+	public static void validarTutor(Tutor tutor) throws ModelException {
+		if (tutor == null)
+			throw new ModelException("É obrigatório indicar quem é o Tutor do Pet.");
+	}
+}

@@ -1,0 +1,117 @@
+package model;
+
+public class Servico {
+	//
+	// TODO: Constantes
+	//
+	
+	private String id;
+	private String tipo;
+	private Pet pet;
+	private int dia;
+	private String mes;
+	private int ano;
+	private String status;
+	private String observacao;
+	private float valor;
+	
+	public Servico(String id, String tipo, Pet pet, int dia, String mes, int ano, String status, 
+			String observacao, float valor) throws ModelException{
+
+		super();
+		this.setId(id);
+		this.setTipo(tipo);
+		this.setPet(pet);
+		this.setDia(dia);
+		this.setMes(mes);
+		this.setAno(ano);
+		this.setStatus(status);
+		this.setObservacao(observacao);
+		this.setValor(valor);
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) throws ModelException{
+		Servico.validarId(id);
+		this.id = id;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) throws ModelException{
+		Servico.validarTipo(tipo);
+		this.tipo = tipo;
+	}
+
+	public Pet getPet() {
+		return pet;
+	}
+
+	public void setPet(Pet pet) throws ModelException{
+		Servico.validarPet(pet);
+		this.pet = pet;
+	}
+
+	public int getDia() {
+		return dia;
+	}
+
+	public void setDia(int dia) throws ModelException{
+		Servico.validarDia(dia);
+		this.dia = dia;
+	}
+
+	public String getMes() {
+		return mes;
+	}
+
+	public void setMes(String mes) throws ModelException{
+		Servico.validarMes(mes);
+		this.mes = mes;
+	}
+
+	public int getAno() {
+		return ano;
+	}
+
+	public void setAno(int ano) throws ModelException{
+		Servico.validarAno(ano);
+		this.ano = ano;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) throws ModelException{
+		Servico.validarStatus(status);
+		this.status = status;
+	}
+
+	public String getObservacao() {
+		return observacao;
+	}
+
+	public void setObservacao(String observacao) throws ModelException{
+		Servico.validarObservacao(observacao);
+		this.observacao = observacao;
+	}
+
+	public float getValor() {
+		return valor;
+	}
+
+	public void setValor(float valor) throws ModelException{
+		Servico.validarValor(valor);
+		this.valor = valor;
+	}
+	
+	//
+	// TODO: Métodos de Validação
+	//
+}
